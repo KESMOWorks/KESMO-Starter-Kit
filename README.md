@@ -72,3 +72,18 @@ KESMO Starter Kit
     ├── images/
     ├── icons/
     └── screenshots/
+
+
+
+## Required Before Publishing
+
+Before releasing a KESMO tool built from this Starter Kit:
+
+- [ ] Change `robots.txt` to allow search indexing.
+- [ ] Update `sitemap.xml` with the new tool's URLs.
+- [ ] Replace all `KESMO-Starter-Kit` URLs with the new repository URL.
+- [ ] Update the `<base>` tag in `404.html`.
+- [ ] Replace the homepage content with the tool interface.
+- [ ] Review the Privacy Policy for tool-specific features.
+- [ ] Verify the custom 404 page.
+- [ ] Test GitHub Pages deployment.
