@@ -94,7 +94,9 @@
     }
   </script>
 
+  <script src="components.js" defer></script>
   <script src="script.js" defer></script>
+  
 </head>
 
 <body>
@@ -102,45 +104,7 @@
     Skip to main content
   </a>
 
-  <header class="site-header">
-    <div class="page-container header-container">
-      <a
-        class="site-brand"
-        href="https://kesmoworks.github.io/"
-        aria-label="Visit the KESMO home page"
-      >
-        <img
-          class="site-logo"
-          src="assets/branding/logo.svg"
-          alt=""
-          width="42"
-          height="42"
-          aria-hidden="true"
-        >
-
-        <span class="site-brand-text">
-          KESMO
-        </span>
-      </a>
-
-      <nav
-        class="site-navigation"
-        aria-label="Primary navigation"
-      >
-        <a href="index.html" aria-current="page">
-          Home
-        </a>
-
-        <a href="about.html">
-          About
-        </a>
-
-        <a href="privacy.html">
-          Privacy
-        </a>
-      </nav>
-    </div>
-  </header>
+  <div id="site-header"></div>
 
   <main id="main-content">
     <section
@@ -398,61 +362,7 @@
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="page-container footer-container">
-      <div class="footer-brand">
-        <a
-          class="footer-site-brand"
-          href="https://kesmoworks.github.io/"
-          aria-label="Visit the KESMO home page"
-        >
-          <img
-            class="footer-logo"
-            src="assets/branding/logo.svg"
-            alt=""
-            width="36"
-            height="36"
-            aria-hidden="true"
-          >
-
-          <span>
-            KESMO
-          </span>
-        </a>
-
-        <p>
-          Precision made simple.
-        </p>
-      </div>
-
-      <nav
-        class="footer-navigation"
-        aria-label="Footer navigation"
-      >
-        <a href="index.html">
-          Home
-        </a>
-
-        <a href="about.html">
-          About
-        </a>
-
-        <a href="privacy.html">
-          Privacy
-        </a>
-
-        <a href="https://kesmoworks.github.io/">
-          All KESMO Tools
-        </a>
-      </nav>
-
-      <p class="copyright">
-        &copy;
-        <span id="current-year">2026</span>
-        KESMO. All rights reserved.
-      </p>
-    </div>
-  </footer>
+  <div id="site-footer"></div>
 
   <noscript>
     <div class="noscript-message">
