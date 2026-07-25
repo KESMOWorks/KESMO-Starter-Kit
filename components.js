@@ -14,10 +14,18 @@
   is available.
 */
 const KESMO_CONFIG = Object.freeze({
-  toolHomeUrl: "index.html",
-  kesmoHomeUrl: "https://kesmoworks.github.io/",
+  repositoryName: "KESMO-Starter-Kit",
+  projectName: "KESMO Starter Kit",
+  version: "1.0.0",
+
   brandName: "KESMO",
   tagline: "Precision made simple.",
+
+  toolHomeUrl: "index.html",
+  kesmoHomeUrl: "https://kesmoworks.github.io/",
+
+  supportEmail: "kesmo.support@gmail.com",
+
   logoPath: "assets/branding/logo.svg"
 });
 
@@ -150,9 +158,9 @@ function createSiteFooter() {
 
           <p>
             Questions or suggestions?
-            <a href="mailto:kesmo.support@gmail.com">
-              Email KESMO
-            </a>.
+            <a href="mailto:${KESMO_CONFIG.supportEmail}">
+  Email KESMO
+</a>.
           </p>
         </div>
 
