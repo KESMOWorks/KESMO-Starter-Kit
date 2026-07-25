@@ -23,6 +23,7 @@ const KESMO_CONFIG = Object.freeze({
 
   toolHomeUrl: "index.html",
   kesmoHomeUrl: "https://kesmoworks.github.io/",
+  
   supportEmail: "kesmo.support@gmail.com",
 
   logoPath: "assets/branding/logo.svg"
