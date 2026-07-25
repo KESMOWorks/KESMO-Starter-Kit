@@ -126,7 +126,7 @@ function createSiteFooter() {
   return `
     <footer class="site-footer">
       <div class="page-container footer-container">
-        <div class="footer-brand">
+                <div class="footer-brand">
           <a
             class="footer-site-brand"
             href="${KESMO_CONFIG.toolHomeUrl}"
@@ -146,6 +146,13 @@ function createSiteFooter() {
 
           <p>
             ${KESMO_CONFIG.tagline}
+          </p>
+
+          <p>
+            Questions or suggestions?
+            <a href="mailto:kesmo.support@gmail.com">
+              Email KESMO
+            </a>.
           </p>
         </div>
 
