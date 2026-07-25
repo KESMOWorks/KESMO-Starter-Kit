@@ -10,13 +10,12 @@
 /*
   Central KESMO configuration.
 
-  Update these values when the permanent KESMO Home address
-  or shared brand paths change.
+  Update kesmoHomeUrl when the permanent KESMO Home site
+  is available.
 */
 const KESMO_CONFIG = Object.freeze({
   toolHomeUrl: "index.html",
   kesmoHomeUrl: "https://kesmoworks.github.io/",
-  organizationUrl: "https://github.com/KESMOWorks",
   brandName: "KESMO",
   tagline: "Precision made simple.",
   logoPath: "assets/branding/logo.svg"
@@ -119,9 +118,6 @@ function createSiteHeader() {
 /**
  * Creates the shared KESMO site footer.
  *
- * The year is calculated when the component is rendered, so the
- * footer does not require a separate year-update function.
- *
  * @returns {string}
  */
 function createSiteFooter() {
@@ -170,11 +166,7 @@ function createSiteFooter() {
           </a>
 
           <a href="${KESMO_CONFIG.kesmoHomeUrl}">
-          All KESMO Tools
-          </a>
-
-          <a href="${KESMO_CONFIG.organizationUrl}">
-            GitHub
+            All KESMO Tools
           </a>
         </nav>
 
