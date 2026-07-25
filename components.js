@@ -1,6 +1,6 @@
 /*
   KESMO Starter Kit
-  Version: 1.0.0
+  Version: 1.1.0
 
   Shared page components for KESMO web tools.
 */
@@ -16,7 +16,7 @@
 const KESMO_CONFIG = Object.freeze({
   repositoryName: "KESMO-Starter-Kit",
   projectName: "KESMO Starter Kit",
-  version: "1.0.0",
+  version: "1.1.0",
 
   brandName: "KESMO",
   tagline: "Precision made simple.",
