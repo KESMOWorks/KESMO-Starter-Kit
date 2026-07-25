@@ -87,3 +87,127 @@ Before releasing a KESMO tool built from this Starter Kit:
 - [ ] Review the Privacy Policy for tool-specific features.
 - [ ] Verify the custom 404 page.
 - [ ] Test GitHub Pages deployment.
+
+
+## Copying the Starter Kit
+
+Follow this checklist every time you create a new KESMO tool.
+
+### 1. Create the Repository
+
+- [ ] Create a new public GitHub repository.
+- [ ] Copy the entire KESMO Starter Kit into the new repository.
+- [ ] Enable GitHub Pages.
+
+---
+
+### 2. Update `components.js`
+
+Update the `KESMO_CONFIG` object.
+
+- [ ] `repositoryName`
+- [ ] `projectName`
+- [ ] `version`
+- [ ] `toolHomeUrl` (normally remains `index.html`)
+- [ ] `supportEmail` (if different)
+- [ ] `logoPath` (normally unchanged)
+
+---
+
+### 3. Update Search Metadata
+
+Every public page should receive:
+
+- [ ] Correct page title
+- [ ] Correct meta description
+- [ ] Correct canonical URL
+- [ ] Correct Open Graph URL
+- [ ] Correct Open Graph image
+- [ ] Correct X/Twitter Card information
+- [ ] Correct structured data
+
+Pages to review:
+
+- [ ] `index.html`
+- [ ] `about.html`
+- [ ] `privacy.html`
+
+---
+
+### 4. Replace Starter Kit Content
+
+- [ ] Replace the homepage with the new tool.
+- [ ] Update the About page for the new tool.
+- [ ] Review the Privacy Policy for the tool's actual behavior.
+- [ ] Update the social sharing image if appropriate.
+
+---
+
+### 5. Update Search Files
+
+#### robots.txt
+
+Before publishing a public KESMO tool:
+
+- [ ] Change:
+
+```text
+Disallow: /
+```
+
+to:
+
+```text
+Allow: /
+```
+
+#### sitemap.xml
+
+- [ ] Replace every Starter Kit URL with the new repository URL.
+- [ ] Verify that `404.html` is **not** included.
+
+---
+
+### 6. Update `404.html`
+
+- [ ] Update the `<base>` path to the new repository.
+
+Example:
+
+```html
+<base href="https://kesmoworks.github.io/NEW-REPOSITORY/">
+```
+
+---
+
+### 7. Test Everything
+
+Verify:
+
+- [ ] Home page
+- [ ] About page
+- [ ] Privacy page
+- [ ] Custom 404 page
+- [ ] Mobile layout
+- [ ] Desktop layout
+- [ ] Keyboard navigation
+- [ ] Footer links
+- [ ] Email link
+- [ ] All KESMO Tools link
+- [ ] Social sharing image
+- [ ] Favicon
+
+---
+
+### 8. Final Review
+
+Confirm:
+
+- [ ] No "Starter Kit" text remains.
+- [ ] No placeholder content remains.
+- [ ] No broken links remain.
+- [ ] No console errors appear.
+- [ ] Accessibility still works.
+- [ ] The tool feels production-ready.
+
+Only after every item above is complete should the new KESMO tool be considered ready for publication.
