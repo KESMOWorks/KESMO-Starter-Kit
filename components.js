@@ -14,7 +14,8 @@
   or shared brand paths change.
 */
 const KESMO_CONFIG = Object.freeze({
-  homeUrl: "https://kesmoworks.github.io/",
+  toolHomeUrl: "index.html",
+  kesmoHomeUrl: "https://kesmoworks.github.io/",
   organizationUrl: "https://github.com/KESMOWorks",
   brandName: "KESMO",
   tagline: "Precision made simple.",
@@ -73,8 +74,8 @@ function createSiteHeader() {
       <div class="page-container">
         <a
           class="site-name"
-          href="${KESMO_CONFIG.homeUrl}"
-          aria-label="Visit the KESMO home page"
+          href="${KESMO_CONFIG.toolHomeUrl}"
+          aria-label="${KESMO_CONFIG.brandName} home"
         >
           <img
             class="site-logo"
@@ -132,8 +133,8 @@ function createSiteFooter() {
         <div class="footer-brand">
           <a
             class="footer-site-brand"
-            href="${KESMO_CONFIG.homeUrl}"
-            aria-label="Visit the KESMO home page"
+            href="${KESMO_CONFIG.toolHomeUrl}"
+            aria-label="${KESMO_CONFIG.brandName} home"
           >
             <img
               class="footer-logo"
@@ -168,8 +169,8 @@ function createSiteFooter() {
             Privacy
           </a>
 
-          <a href="${KESMO_CONFIG.homeUrl}">
-            All KESMO Tools
+          <a href="${KESMO_CONFIG.kesmoHomeUrl}">
+          All KESMO Tools
           </a>
 
           <a href="${KESMO_CONFIG.organizationUrl}">
