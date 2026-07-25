@@ -1,4 +1,2 @@
 User-agent: *
-Allow: /
-
-Sitemap: https://kesmoworks.github.io/kesmo-starter-kit/sitemap.xml
+Disallow: /
