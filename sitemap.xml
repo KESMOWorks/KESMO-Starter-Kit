@@ -5,7 +5,7 @@
 
   <url>
     <loc>
-      https://kesmoworks.github.io/kesmo-starter-kit/
+      https://kesmoworks.github.io/KESMO-Starter-Kit/
     </loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
@@ -13,7 +13,7 @@
 
   <url>
     <loc>
-      https://kesmoworks.github.io/kesmo-starter-kit/about.html
+      https://kesmoworks.github.io/KESMO-Starter-Kit/about.html
     </loc>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
@@ -21,7 +21,7 @@
 
   <url>
     <loc>
-      https://kesmoworks.github.io/kesmo-starter-kit/privacy.html
+      https://kesmoworks.github.io/KESMO-Starter-Kit/privacy.html
     </loc>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
