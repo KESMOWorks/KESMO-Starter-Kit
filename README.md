@@ -277,6 +277,50 @@ Accurate sitemap.xml
 
 The custom 404.html page should not be included in the sitemap.
 
+SEO Configuration Standard
+
+The search and social metadata in each HTML file should remain together in one clearly marked configuration section inside the <head>.
+
+For each page, the following values must describe the same page and project:
+
+Page title
+
+Meta description
+
+Canonical URL
+
+Open Graph title
+
+Open Graph description
+
+Open Graph URL
+
+Open Graph image
+
+Open Graph image alternative text
+
+X/Twitter title
+
+X/Twitter description
+
+X/Twitter image
+
+X/Twitter image alternative text
+
+Structured-data name
+
+Structured-data description
+
+Structured-data URL
+
+Structured-data image or logo URLs, when included
+
+Do not generate essential search or social metadata with JavaScript. Keep it directly in the HTML so search engines, link-preview services, and other crawlers can read it from the original document.
+
+Do not add a meta keywords tag. Modern Google Search does not use the keywords meta tag for web ranking.
+
+Before publishing, verify that no Starter Kit URL, project name, description, image path, or placeholder remains in any public page.
+
 Required Before Publishing
 
 Before releasing a KESMO tool built from this Starter Kit:
@@ -403,23 +447,67 @@ data-note, when applicable
 
 Confirm that old hard-coded Hero markup has been removed.
 
-5. Update Search Metadata
+5. Update Search and Social Configuration
 
-Every public page should receive:
+Every public page contains a clearly marked search and social configuration section inside its <head>.
 
-Correct page title
+Update every applicable value in that section:
 
-Correct meta description
+Page title
 
-Correct canonical URL
+Meta description
 
-Correct Open Graph URL
+Canonical URL
 
-Correct Open Graph image
+Open Graph title
 
-Correct X/Twitter Card information
+Open Graph description
 
-Correct structured data
+Open Graph URL
+
+Open Graph image
+
+Open Graph image alternative text
+
+X/Twitter title
+
+X/Twitter description
+
+X/Twitter image
+
+X/Twitter image alternative text
+
+Structured-data name
+
+Structured-data description
+
+Structured-data URL
+
+Structured-data image and logo URLs, when included
+
+Confirm that repeated values match. The canonical URL, Open Graph URL, and structured-data URL should identify the same published page.
+
+Google Search Console Verification
+
+Tools published beneath:
+
+https://kesmoworks.github.io/
+
+are normally covered by the verified root URL-prefix property.
+
+Leave the optional google-site-verification meta tag commented out unless Google provides a separate token for the new project or property.
+
+When Google supplies a verification token:
+
+Use the token exactly as provided.
+
+Place the verification meta tag inside the homepage <head>.
+
+Do not rename or alter a downloaded Google HTML verification file.
+
+Do not copy a verification token from an unrelated website or property.
+
+Do not remove an active verification method after ownership has been confirmed, because Google may check it again later.
 
 Pages to review:
 
@@ -428,6 +516,8 @@ index.html
 about.html
 
 privacy.html
+
+404.html, when it contains public metadata
 
 6. Replace Starter Kit Content
 
