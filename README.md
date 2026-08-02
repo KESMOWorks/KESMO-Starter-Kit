@@ -149,23 +149,50 @@ data-note
 
 Page-specific text remains in the HTML while shared structure and markup remain centralized in components.js.
 
-Shared Development Workflow
+## Shared Development Workflow
 
 The Starter Kit is the single source of truth for shared KESMO improvements.
 
 When an improvement benefits more than one KESMO tool, follow this workflow:
 
-Improve the Starter Kit.
-
-Verify the improvement in the Starter Kit.
-
-Apply the improvement to existing KESMO tools.
-
-Use the updated Starter Kit as the foundation for future tools.
+1. Improve the Starter Kit.
+2. Verify the improvement in the Starter Kit.
+3. Apply the improvement to existing KESMO tools.
+4. Use the updated Starter Kit as the foundation for future tools.
 
 If an improvement is first proven inside an existing KESMO tool, copy it back into the Starter Kit before treating it as a shared standard.
 
-The live GitHub repository and this README are the development source of truth. Repository contents take precedence over previous notes or chat history.
+### Local Development
+
+KESMO development is performed locally in Visual Studio Code.
+
+The local repository is the active development workspace. The GitHub repository remains the source of truth for the latest published version, and this README is the development source of truth for the project.
+
+Do not assume that a local change is published until it has been committed, pushed to GitHub, and the GitHub Pages deployment has been verified.
+
+For normal development:
+
+1. Clone the repository from GitHub, or pull the latest changes if it has already been cloned.
+2. Open the local repository in Visual Studio Code.
+3. Make changes locally.
+4. Preview the site with the Microsoft Live Preview extension for Visual Studio Code.
+5. Test the complete change locally before publishing.
+6. Run `git status` and review the modified files.
+7. Stage the completed changes with `git add .`.
+8. Commit the completed work with a clear message using `git commit -m "Relevant update"`.
+9. Push the commit with `git push origin main`.
+10. Run `git status` again and confirm that the working tree is clean.
+11. Verify the GitHub Pages deployment when it becomes available.
+12. Update the README, CHANGELOG, version, release, or tag when appropriate.
+
+The standard Git publishing sequence is:
+
+```bash
+git status
+git add .
+git commit -m "Relevant update"
+git push origin main
+git status
 
 Repository Structure
 
