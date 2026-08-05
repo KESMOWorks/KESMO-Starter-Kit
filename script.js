@@ -1,6 +1,6 @@
 /*
   KESMO Starter Kit
-  Version: 1.0.0
+  Version: 1.2.0
 
   Shared JavaScript enhancements for KESMO web tools.
 */

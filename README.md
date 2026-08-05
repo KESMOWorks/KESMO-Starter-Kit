@@ -1,6 +1,6 @@
 # KESMO Starter Kit
 
-**Version 1.1.0**
+**Version 1.2.0**
 
 The reusable website foundation for KESMO web tools.
 
@@ -350,13 +350,17 @@ This approach:
 
 Follow this checklist every time you create a new KESMO tool.
 
-### 1. Create the Repository
-
 Create a new public GitHub repository.
 
 Copy the entire KESMO Starter Kit into the new repository.
 
-Enable GitHub Pages.
+Enable GitHub Pages:
+
+1. Open **Settings → Pages**.
+2. Set **Source** to `Deploy from a branch`.
+3. Set **Branch** to `main`.
+4. Set **Folder** to `/ (root)`.
+5. Save the configuration.
 
 ### 2. Update components.js
 
@@ -368,6 +372,7 @@ Review:
 * `projectName`
 * `version`
 * `toolHomeUrl`
+* `toolHomeLabel`
 * `kesmoHomeUrl`
 * `supportEmail`
 * `logoPath`
@@ -377,6 +382,14 @@ Review:
 ```text
 index.html
 ```
+
+```markdown
+`toolHomeLabel` should use the tool's name rather than the generic label `Home`.
+
+Example:
+
+```text
+Break-Even Calculator
 
 `kesmoHomeUrl` should point to the central KESMO website:
 
@@ -460,6 +473,11 @@ https://kesmoworks.github.io/
 
 are normally covered by the verified root URL-prefix property.
 
+```markdown
+Google Search Console is account-specific and may display sensitive information.
+
+Handle Search Console verification, sitemap submission, indexing requests, and related account work off-stream during livestream development.
+
 Leave the optional `google-site-verification` meta tag commented out unless Google provides a separate token for the new project or property.
 
 When Google supplies a verification token:
@@ -480,10 +498,20 @@ Pages to review:
 ### 6. Replace Starter Kit Content
 
 * Replace the homepage with the new tool.
-* Update the About page for the new tool.
-* Review the Privacy Policy for the tool's actual behavior.
+* Update the About page for the new tool and use `About the [Tool Name]` as the page Hero title.
+* Review the Privacy Policy for the tool's actual behavior and use `Privacy Policy` as the page Hero title.
 * Update the social sharing image if appropriate.
 * Remove Starter Kit-specific instructions from public-facing content.
+
+Use the standard KESMO contact format on About and Privacy pages:
+
+```html
+<p>
+  <strong>Email us:</strong>
+  <a href="mailto:kesmo.support@gmail.com">
+    kesmo.support@gmail.com
+  </a>
+</p>
 
 ### 7. Update Search Files
 
@@ -550,8 +578,8 @@ Verify:
 
 Confirm:
 
-* No unintended Starter Kit text remains.
-* No placeholder content remains.
+* No unintended Starter Kit text, URLs, repository names, or placeholder content remains.
+* Run a quick repository search for terms such as `Starter Kit`, `KESMO-Starter-Kit`, and `placeholder`.
 * No duplicate skip links remain.
 * No hard-coded shared components remain.
 * No broken links remain.
